@@ -1,0 +1,109 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.library {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    height: 200px;;
+    background-color: rgb(106, 168, 255);
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+.add {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif'
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+}
+
+.form {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.full-form {
+    position: relative;
+}
+
+.form .close img{
+    height: 20px;
+}
+
+.form .close {
+    background-color: transparent;
+    border: none;
+    right: 20px;
+    position: absolute;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+
+form > button {
+    position: relative;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.full-form {
+    background-color: rgb(197, 194, 194);
+}
+
+.form-input {
+    height: 250px;
+    width: 300px;
+    padding: 50px;
+
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: repeat(5, 30px);
+    gap: 20px;
+}
+
+.form-input > p {
+    justify-content: center;
+}
+
+.form-input > button {
+    grid-area: 5 / 1 / -1 / -1;
+}

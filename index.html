@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The Rosemary Collection</h1>
+    <section>
+      <h2>Books</h2>
+      <div class="library"></div>
+      <button class="add">Add new book</button>
+    </section>
+    <section class="form">
+      <form>
+
+        <section class="full-form">
+          <button type="button" class="close">
+            <img src="close (2).png" />
+          </button>
+          
+          <section class="form-input">
+            <label for="name">Book name</label>
+          <input required id="name" type="text" />
+
+          <label for="author">Author</label>
+          <input required id="author" type="text" />
+
+          <label for="pages">Pages</label>
+          <input required min="1" id="pages" type="number" />
+
+          <label for="read-status">Read status</label>
+          <input id="read-status" type="checkbox" />
+
+          <button class="submit" type="submit">Add Book</button>
+          </section>
+          
+        </section>
+      </form>
+    </section>
+    <footer>Copyright &copy; hongyi929</footer>
+  </body>
+</html>
